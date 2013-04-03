@@ -7,10 +7,14 @@ Some extra tools for OpenMM
 
 ![Screenshot](http://i.imgur.com/IX3ryiN.png)
 
-Example:
+Example Usage:
 
 ```
-webreporter = WebReporter(200, ['total', 'temperature', 'kinetic', 'potential'])
+from openmmtools import webreporter
+
+[... setup simulation ...]
+
+webreporter = WebReporter(report_interval=200, observables=['total', 'temperature', 'kinetic', 'potential'])
 simulation.reporters.append(webreporter)
 simulation.step(...)
 ```
