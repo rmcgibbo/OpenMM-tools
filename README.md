@@ -2,8 +2,8 @@ OpenMM-tools
 ============
 _Additional Tools for the OpenMM toolkit for molecular simulation_
 
-- `WebReporter`: A reporter object that plots summary statistics dynamically (as they're computed) in
-   your browser using `tornado`, websockets, and the google charts API.
+- `WebReporter`: A reporter object that plots summary statistics LIVE (as they're computed) in
+   your browser using tornado, websockets, and the google charts API.
 
 ![Screenshot](http://i.imgur.com/IX3ryiN.png)
 
