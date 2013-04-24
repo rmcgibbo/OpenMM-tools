@@ -151,7 +151,7 @@ class WebReporter(object):
 
     def describeNextReport(self, simulation):
         steps = self.report_interval - simulation.currentStep%self.report_interval
-        return (steps, False, False, False, True)
+        return (steps, True, False, False, True)
 
     def report(self, simulation, state):
         if not self._has_initialized:
